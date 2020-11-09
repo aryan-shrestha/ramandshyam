@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@import "./navigationbar";
+
+.background{
+    background-color:  #484848;
+    height: 100vh;
+}
+
+.title{
+    font-family: 'Antic', sans-serif;
+    color: white;
+    font-size: 28px;
+    position: absolute;
+    top: 3%;
+    left: 40%;
+    display: none;
+}
+
+
+.sub-nav{
+    border-top: 3px solid rgba(51, 51, 51, 0.658);
+    height: 5vh;
+    position: relative;
+    top: 1%;
+    width: 85%;
+    margin: auto;
+    ul{
+        height: 100%;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        list-style: none;
+    }
+    ul a{
+        text-decoration: none;
+        color: white;
+        font-family: 'Antic', sans-serif;
+        font-size: 20px;
+    }
+
+}
+
+.gallery{
+    display: flex;
+    width: 85%;
+    margin: auto;
+    margin-top: 2%;
+    justify-content: space-between;
+    align-items: center;
+}
+.main-image{
+    flex: 1;
+}
+.grid{
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(3, 160px);
+    justify-content: space-between;
+    align-items: center;
+    
+    img{
+        width: 100%;
+        margin:3px;
+        cursor: pointer;
+    }
+}
+
+@media screen and (max-width:1120px){
+    .gallery{
+        height: 75vh;
+    }
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(2, 160px);
+        justify-content: space-around;
+        align-items: center; 
+        overflow-y: scroll;
+        height: 75vh;
+    }
+    .grid::-webkit-scrollbar{
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 450px){
+    .title{
+        display: unset;
+    }
+
+    .gallery{
+        flex-direction: column;
+        padding: 5px;
+        min-height: 80vh;
+    }
+
+    .grid{
+        display: flex;
+        width: 100%;
+        overflow-x: scroll;
+        z-index: 0;
+    
+        img{
+            transform: translateX(200px);
+            width: 120px;
+            margin: 5px;
+            z-index: 0;
+        }
+    } 
+}
+
+div.fadeOut{
+    display: none;
+}
+

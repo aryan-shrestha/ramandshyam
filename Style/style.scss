@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.background{
+    background: url("./background.png") no-repeat center;
+    background-size: auto;
+    height: 100vh;
+}
+
+.container{
+    width: 95%;
+    height: 85vh;
+    display: flex;
+    flex-direction: row-reverse;
+    margin: auto;
+}
+
+.quote{
+    flex:1;
+    justify-self: flex-end;
+    align-self: center;
+    font-family: 'Antic', sans-serif;
+    font-size: 38px;
+    text-align: right;
+    color: white;
+
+}
+.link{
+    flex: 1;
+    justify-self: flex-start;
+    align-self: flex-end;
+    font-family: 'Antic', sans-serif ;
+    font-size: 20px;
+    text-align: left;
+    color: white;
+}
+
+@import "./navigationbar";
+@media screen and (max-width: 420px){
+    .quote{
+        font-size: 28px;
+    }
+}
