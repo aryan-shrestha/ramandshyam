@@ -215,7 +215,7 @@ nav {
   .grid img {
     -webkit-transform: translateX(200px);
             transform: translateX(200px);
-    width: 120px;
+    width: 150px;
     margin: 5px;
     z-index: 0;
   }
