@@ -213,9 +213,7 @@ nav {
     z-index: 0;
   }
   .grid img {
-    -webkit-transform: translateX(200px);
-            transform: translateX(200px);
-    width: 150px;
+    width: 120px;
     margin: 5px;
     z-index: 0;
   }
