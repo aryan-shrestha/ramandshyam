@@ -99,6 +99,13 @@
         min-height: 80vh;
     }
 
+    .main-image{
+        text-align: center;
+        img{
+            width: 75%;
+        }
+    }
+
     .grid{
         display: flex;
         width: 100%;

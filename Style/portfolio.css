@@ -198,6 +198,12 @@ nav {
     padding: 5px;
     min-height: 80vh;
   }
+  .main-image {
+    text-align: center;
+  }
+  .main-image img {
+    width: 75%;
+  }
   .grid {
     display: -webkit-box;
     display: -ms-flexbox;
